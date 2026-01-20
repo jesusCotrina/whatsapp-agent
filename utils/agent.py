@@ -10,7 +10,7 @@ client = OpenAI(
 def ask_llama(prompt: str) -> str:
     try:
         response = client.chat.completions.create(
-            model="meta-llama-3-8b-instruct",
+            model="meta-llama-3.1-8b-instruct",
             messages=[
                 {"role": "system", "content": "Eres un asistente útil y claro."},
                 {"role": "user", "content": prompt}
